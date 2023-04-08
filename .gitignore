@@ -1,3 +1,6 @@
+# External dependencies
+FreeRTOS/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
