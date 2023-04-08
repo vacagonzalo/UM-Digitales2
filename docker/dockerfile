@@ -1,0 +1,16 @@
+FROM ubuntu:jammy
+LABEL MAINTAINER="Gonzalo Nahuel Vaca <vacagonzalo@gmail.com>"
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    git
+
+RUN adduser --disabled-password --gecos '' dev && \
+    usermod -aG sudo dev && \
+    echo "dev ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+USER dev
+ENV HOME /home/dev
+ENV LANG en_US.UTF-8
+RUN mkdir /home/dev/workspace
+WORKDIR /home/dev/workspace
