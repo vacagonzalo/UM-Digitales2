@@ -4,17 +4,21 @@ Repositorio de la cátedra **Digitales II** de la [Universidad de Morón](https:
 
 ## Laboratorio FreeRTOS
 
-Las siguientes cartepas forman parte del laboratorio de FreeRTOS:
+### Requerimientos
 
-* demo
-* queue
-* semaphore
+* gcc
+* make
 
-Para que el laboratorio funcione, usted debe:
+### Preparar el ambiente de trabajo
 
-* clonar este repositorio.
-* clonar de forma recursiva el repositorio de [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS).
+* Clonar este repositorio.
+* Ejecutar el comando `make`
 
-NOTA: Los dos repositorios se deben encontrar dentro de la misma carpeta.
+En este punto usted debería contar con todas las dependencias necesarias y todos los proyectos compilados.
 
-Dentro de cada carpeta del laboratorio ejecutar el comando `make`, con esto se construye una carpeta llamada `build` con el aplicativo.
+### Uso del laboratorio
+
+Con el ambiente de trabajo preparado, usted puede ingresar a la carpeta `lab_FreeRTOS`.
+En ella encontrá proyectos de ejemplo ya compilados en el paso anterior.
+Si desea experimentar con alguno en particular, ingrese dentro de la carpeta del proyecto de su interés y ejecute el comando `make`.
+Encontrará en la carpeta `build` el binario listo para ejecutar.
