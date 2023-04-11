@@ -10,7 +10,7 @@ services:
     image: um/td2lab
     container_name: td2lab
     hostname: td2lab
-    command: tail -F /home/dev/workspace/docs/labFreeRTOS.md
+    command: tail -n 50 -F /home/dev/workspace/docs/labFreeRTOS.md
     volumes:
       - .:/home/dev/workspace
     networks:
